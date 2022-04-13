@@ -8,7 +8,7 @@ body, button, input
     background-color: $red
 
 .container
-    max-width: $dekstop
+    max-width: $desktop
     margin: auto
 
 .hero
@@ -18,14 +18,14 @@ body, button, input
     background-repeat: no-repeat
     background-color: $red
     color: white
-    padding: 2.5rem 1rem
+    padding: 2.5rem 1.3rem
 
     &__text
         text-align: center
         margin: 3rem 0
 
     &__title
-        margin: 2rem 0
+        margin: 2rem 0 1.5rem 0
 
     &__p
         margin: 1rem 0
@@ -33,16 +33,23 @@ body, button, input
     &__banner
         background-color: $blue
         border-radius: 10px
-        padding: 1.5rem 3.5rem
+        padding: 1.2rem 3.5rem
         margin: 1.5rem 0
+        text-align: center
+        box-shadow: 0px 7px transparentize($dark-blue, 0.72)
 
-    &__form
-
+    @media ( min-width:  $desktop)
+        display: flex
+        
 .form
     form
         background-color: white
-        padding: 1rem 1.5rem
+        padding: 1rem 2rem
         border-radius: 10px
+
+    .input
+        max-width: 450px
+        margin: 1.5rem auto
 
     &__actions
         display: flex
@@ -50,7 +57,7 @@ body, button, input
 
         button
             width: 100%
-            padding: 0.8rem
+            padding: 1.1rem
             text-transform: uppercase
             background-color: $green
             border: none
@@ -59,3 +66,26 @@ body, button, input
             color: white
             font-weight: 500
             font-size: 0.9rem
+            box-shadow: 0 3px #299969
+            max-width: 450px
+
+    &__reclaim
+        color: $grayish-blue
+        text-align: center
+        font-size: 0.75rem
+        line-height: 1.1rem
+        margin-top: 8px
+
+        a
+            color: $red
+            text-decoration: none
+            font-weight: 600
+
+.attribution
+    color: color
+    text-align: center
+    
+    a
+        color: $blue
+        text-decoration: none
+        font-weight: 600
