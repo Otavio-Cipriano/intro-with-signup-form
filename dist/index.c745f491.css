@@ -1,0 +1,141 @@
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+h1 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+b {
+  font-weight: 600;
+}
+
+.input {
+  background-color: #fff;
+  border: 1.5px solid #b9b6d3;
+  border-radius: 5px;
+  margin: .7rem 0;
+}
+
+.input input {
+  background-color: inherit;
+  width: 100%;
+  border: none;
+  padding: .7rem 1rem;
+  font-weight: 600;
+}
+
+body, button, input {
+  background-color: #ff7a7a;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.hero {
+  min-height: 100vh;
+  width: 100%;
+  color: #fff;
+  background: #ff7a7a url("bg-intro-mobile.64de9007.png") no-repeat;
+  padding: 2.5rem 1rem;
+}
+
+.hero__text {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.hero__title {
+  margin: 2rem 0;
+}
+
+.hero__p {
+  margin: 1rem 0;
+}
+
+.hero__banner {
+  background-color: #6055a5;
+  border-radius: 10px;
+  margin: 1.5rem 0;
+  padding: 1.5rem 3.5rem;
+}
+
+.form form {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+}
+
+.form__actions {
+  justify-content: center;
+  display: flex;
+}
+
+.form__actions button {
+  width: 100%;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #38cc8c;
+  border: none;
+  border-radius: 5px;
+  margin: .5rem 0;
+  padding: .8rem;
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=index.c745f491.css.map */
