@@ -1,19 +1,31 @@
 @use '../abstracts' as *
 
 .input
-    background-color: white
     margin: 0.7rem 0
-    border: 1.5px solid $grayish-blue
-    border-radius: 5px
-    padding: 0.7rem 1rem 
-    
+    position: relative
     input
         background-color: inherit
         width: 100%
         font-weight: 600
         font-size: 0.9rem
-        border: none
+        border: 1.5px solid $grayish-blue
+        border-radius: 5px
+        padding: 1rem 1.7rem
+        background-color: white
+        caret-color: $blue
+        
+        // padding-left: 30px
 
         &:focus
-            border: none
             outline: none
+            border: 1px solid $blue
+
+    &__icon
+        background-image: url('../images/icon-error.svg')
+        background-repeat: no-repeat
+        min-width: 30px
+        min-height: 30px
+        position: absolute
+        bottom: 6px
+        left: 6px
+        display: none

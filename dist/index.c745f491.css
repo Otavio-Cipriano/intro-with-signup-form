@@ -61,35 +61,82 @@ b {
 }
 
 .input {
-  background-color: #fff;
-  border: 1.5px solid #b9b6d3;
-  border-radius: 5px;
   margin: .7rem 0;
-  padding: .7rem 1rem;
+  position: relative;
 }
 
 .input input {
   background-color: inherit;
   width: 100%;
-  border: none;
+  caret-color: #6055a5;
+  background-color: #fff;
+  border: 1.5px solid #b9b6d3;
+  border-radius: 5px;
+  padding: 1rem 1.7rem;
   font-size: .9rem;
   font-weight: 600;
 }
 
 .input input:focus {
-  border: none;
+  border: 1px solid #6055a5;
   outline: none;
 }
 
-body, button, input {
-  background-color: #ff7a7a;
-  font-family: Poppins, Arial, Helvetica, sans-serif;
-  font-size: 16px;
+.input__icon {
+  min-width: 30px;
+  min-height: 30px;
+  background-image: url("icon-error.09f0fde6.svg");
+  background-repeat: no-repeat;
+  display: none;
+  position: absolute;
+  bottom: 6px;
+  left: 6px;
 }
 
-.container {
-  max-width: 1440px;
-  margin: auto;
+.form form {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem 1.8rem;
+}
+
+.form .input {
+  max-width: 480px;
+  margin: 1.5rem auto;
+}
+
+.form__actions {
+  justify-content: center;
+  display: flex;
+}
+
+.form__actions button {
+  width: 100%;
+  text-transform: uppercase;
+  color: #fff;
+  max-width: 480px;
+  background-color: #38cc8c;
+  border: none;
+  border-radius: 5px;
+  margin: .5rem 0;
+  padding: 1.1rem;
+  font-size: .9rem;
+  font-weight: 500;
+  box-shadow: 0 3px #299969;
+}
+
+.form__reclaim {
+  color: #b9b6d3;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 1.5rem;
+  font-size: .75rem;
+  line-height: 1.1rem;
+}
+
+.form__reclaim a {
+  color: #ff7a7a;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .hero {
@@ -124,53 +171,43 @@ body, button, input {
 
 @media (min-width: 1440px) {
   .hero {
-    display: flex;
+    background: url("bg-intro-desktop.0ce2adc6.png") 0% bottom content-box border-box;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    place-items: center;
+    display: grid;
+  }
+
+  .hero__text, .hero__form {
+    width: 100%;
+    max-width: 570px;
+  }
+
+  .hero__text {
+    text-align: left;
+    margin: 2rem 0;
+  }
+
+  .hero__title {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+
+  .hero__p {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
   }
 }
 
-.form form {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 1rem 2rem;
+body, button, input {
+  background-color: #ff7a7a;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
 
-.form .input {
-  max-width: 450px;
-  margin: 1.5rem auto;
-}
-
-.form__actions {
-  justify-content: center;
-  display: flex;
-}
-
-.form__actions button {
-  width: 100%;
-  text-transform: uppercase;
-  color: #fff;
-  max-width: 450px;
-  background-color: #38cc8c;
-  border: none;
-  border-radius: 5px;
-  margin: .5rem 0;
-  padding: 1.1rem;
-  font-size: .9rem;
-  font-weight: 500;
-  box-shadow: 0 3px #299969;
-}
-
-.form__reclaim {
-  color: #b9b6d3;
-  text-align: center;
-  margin-top: 8px;
-  font-size: .75rem;
-  line-height: 1.1rem;
-}
-
-.form__reclaim a {
-  color: #ff7a7a;
-  font-weight: 600;
-  text-decoration: none;
+.container {
+  max-width: 1440px;
+  margin: auto;
 }
 
 .attribution {

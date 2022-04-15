@@ -1,0 +1,42 @@
+@use '../abstracts' as *
+
+.form
+    form
+        background-color: white
+        padding: 1rem 1.8rem
+        border-radius: 10px
+
+    .input
+        max-width: 480px
+        margin: 1.5rem auto
+
+    &__actions
+        display: flex
+        justify-content: center
+
+        button
+            width: 100%
+            padding: 1.1rem
+            text-transform: uppercase
+            background-color: $green
+            border: none
+            border-radius: 5px
+            margin: 0.5rem 0
+            color: white
+            font-weight: 500
+            font-size: 0.9rem
+            box-shadow: 0 3px #299969
+            max-width: 480px
+
+    &__reclaim
+        color: $grayish-blue
+        text-align: center
+        font-size: 0.75rem
+        line-height: 1.1rem
+        margin-top: 8px
+        margin-bottom: 1.5rem
+
+        a
+            color: $red
+            text-decoration: none
+            font-weight: 600
